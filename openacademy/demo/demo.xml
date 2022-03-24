@@ -15,5 +15,14 @@
             <field name="description">Short course about XML</field>
         </record>
 
+        <record id="openacademy_courseJS" model="openacademy.course">
+            <field name="name">JavsScript for dummies</field>
+            <field name="description">Basics of JS</field>
+        </record>
+
+        <record id="openacademy_courseHTML" model="openacademy.course">
+            <field name="name">HTML 101</field>
+            <field name="description">Basics of HTML</field>
+        </record>
     </data>
 </odoo>
