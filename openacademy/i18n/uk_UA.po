@@ -1,0 +1,295 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openacademy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-23 14:54+0000\n"
+"PO-Revision-Date: 2022-03-23 17:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_session_view_tree
+msgid "% of seats taken"
+msgstr "% зайнятих місць"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__pers_of_taken_seats
+msgid "% taken"
+msgstr "% зайнято"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                  Start date:"
+msgstr ""
+"<br/>\n"
+"                  Дата початку:"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_openacad_session_kanban
+msgid ""
+"<br/>\n"
+"                  duration:"
+msgstr ""
+"<br/>\n"
+"                  тривалість:"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_openacademy_course
+msgid "Academy courses"
+msgstr "Академічні курси"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__active
+msgid "Active"
+msgstr "Активна"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_wizard_view_form
+msgid "Add"
+msgstr "Додати"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__attendee_ids
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__attendee_ids
+msgid "Attendees"
+msgstr "Учасники"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__attendees_count
+msgid "Attendees count"
+msgstr "Кількість учасників"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_wizard_view_form
+msgid "Cancel"
+msgstr "Відміна"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__color
+msgid "Color"
+msgstr "Колір"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__course_id
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_session_view_search
+msgid "Course"
+msgstr "Курс"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_course_view_form
+msgid "Course description..."
+msgstr "Опис курсу..."
+
+#. module: openacademy
+#: model:ir.model.constraint,message:openacademy.constraint_openacademy_course_name_unique
+msgid "Course name must be unique"
+msgstr "Назва курсу повинна бути унікальною"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_openacademy_session
+msgid "Course sessions"
+msgstr "Заняття курсу"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.openacademy_course_menu
+msgid "Courses"
+msgstr "Курси"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__create_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__create_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_uid
+msgid "Created by"
+msgstr "Створено ким"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__create_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__create_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_date
+msgid "Created on"
+msgstr "Створено коли"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__description
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_course_view_form
+msgid "Description"
+msgstr "Опис"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__display_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__display_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__display_name
+msgid "Display Name"
+msgstr "Назва"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__duration
+msgid "Duration"
+msgstr "Тривалість"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__end_date
+msgid "End Date"
+msgstr "Дата закінчення"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__instructor_id
+#: model:ir.model.fields,field_description:openacademy.field_res_partner__instructor
+#: model:ir.model.fields,field_description:openacademy.field_res_users__instructor
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_session_view_search
+msgid "Instructor"
+msgstr "Викладач"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.view_openacad_session_kanban
+msgid "Instructor:"
+msgstr "Викладач:"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course____last_update
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session____last_update
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard____last_update
+msgid "Last Modified on"
+msgstr "Остання модифікація"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__write_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__write_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__write_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__write_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.openacademy_wizard_launch
+msgid "Launch Attendees registration"
+msgstr "Зарееструвати учасників занятть"
+
+#. module: openacademy
+#: model:res.partner.category,name:openacademy.contact_category_teacher_level1
+msgid "Level 1"
+msgstr "Рівень 1"
+
+#. module: openacademy
+#: model:res.partner.category,name:openacademy.contact_category_teacher_level2
+msgid "Level 2"
+msgstr "Рівень 2"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_course_view_search
+msgid "My courses"
+msgstr "Мої курси"
+
+#. module: openacademy
+#: model:ir.model.constraint,message:openacademy.constraint_openacademy_course_name_desc_differ
+msgid "Name and description must differ"
+msgstr "Назва та опис повинні відрізнятись"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__seats_number
+msgid "Number of seats"
+msgstr "Кількість місць"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.openacademy_menu_root
+msgid "Open Academy"
+msgstr "Open Academy"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.openacademy_course_action
+msgid "Open Academy courses"
+msgstr "Курси Open Academy"
+
+#. module: openacademy
+#: model:ir.actions.act_window,name:openacademy.openacademy_session_action
+#: model:ir.model.fields,field_description:openacademy.field_res_partner__sessions_ids
+#: model:ir.model.fields,field_description:openacademy.field_res_users__sessions_ids
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_instructor_view_form
+msgid "Open Academy sessions"
+msgstr "Заняття Open Academy"
+
+#. module: openacademy
+#: model:res.groups,name:openacademy.group_manager
+msgid "OpenAcademy / Manager"
+msgstr "Open Academy / Менеджер"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__responsible_id
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_course_view_search
+msgid "Responsible"
+msgstr "Відповідальний"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__session_ids
+msgid "Session"
+msgstr "Заняття"
+
+#. module: openacademy
+#: model:ir.model.fields,help:openacademy.field_openacademy_session__duration
+msgid "Session duration in days"
+msgstr "Тривалість заняття в днях"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_course_view_form
+#, fuzzy
+#| msgid "Session"
+msgid "Sessions"
+msgstr "Заняття"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__sessions_ids
+#: model:ir.ui.menu,name:openacademy.openacademy_session_menu
+#: model_terms:ir.ui.view,arch_db:openacademy.openacademy_session_view_tree
+msgid "Sessions"
+msgstr "Заняття"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__start_date
+msgid "Start date"
+msgstr "Дата початку"
+
+#. module: openacademy
+#: model:res.partner.category,name:openacademy.contact_category_teacher
+msgid "Teacher"
+msgstr "Вчитель"
+
+#. module: openacademy
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course__name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_session__name
+msgid "Title"
+msgstr "Заголовок"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_openacademy_wizard
+msgid "Wizard to add attendees to sessions"
+msgstr "Візард для реестрації учасників заняття"

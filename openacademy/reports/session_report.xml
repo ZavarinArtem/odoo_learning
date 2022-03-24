@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="session_report" model="ir.actions.report">
+        <field name="name">Sessions Info</field>
+        <field name="model">openacademy.session</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">openacademy.session_template</field>
+        <field name="report_file">openacademy.session_template</field>
+        <field name="binding_model_id" ref="model_openacademy_session"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

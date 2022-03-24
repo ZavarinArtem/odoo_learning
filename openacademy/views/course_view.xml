@@ -1,0 +1,73 @@
+<odoo>
+  <data>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="openacademy_course_action">
+      <field name="name">Open Academy courses</field>
+      <field name="res_model">openacademy.course</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{'search_view_id': 'openacademy.openacademy_course_view_search',
+                              'search_default_curr_user_courses': 1}</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Open Academy" id="openacademy_menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Courses" id="openacademy_course_menu" parent="openacademy_menu_root" action="openacademy_course_action"/>
+
+    <!-- courses tree -->
+    <record model="ir.ui.view" id="openacademy_course_view_tree">
+      <field name="name">Courses List</field>
+      <field name="model">openacademy.course</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- courses form -->
+    <record model="ir.ui.view" id="openacademy_course_view_form">
+      <field name="name">Course Form</field>
+      <field name="model">openacademy.course</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <group>
+              <field name="name" />
+            </group>
+            <group>
+              <field name="responsible_id" />
+            </group>
+          </group>
+          <notebook>
+            <page string="Description">
+              <field name="description" nolabel="1" placeholder="Course description..."/>
+            </page>
+            <page string="Sessions">
+              <field name="sessions_ids" nolabel="1" />
+            </page>
+          </notebook>
+        </form>
+      </field>
+    </record>
+
+    <!-- courses search -->
+    <record model="ir.ui.view" id="openacademy_course_view_search">
+      <field name="name">Courses List search</field>
+      <field name="model">openacademy.course</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="responsible_id" widget="selection"/>
+
+          <filter name="curr_user_courses" string="My courses" domain="[('responsible_id', '=', uid)]" />
+          <filter name="groupby_responsible" string="Responsible" context="{'group_by': 'responsible_id'}"/>
+        </search>
+      </field>
+    </record>
+    
+  </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="session_template">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="session">
+                <div class="page" style="page-break-after: always;">
+                    <div>
+                        <strong>Session:</strong>
+                        <t t-out="session.name"/>
+                    </div>
+                    <div>
+                        <strong>Start:</strong>
+                        <t t-out="session.start_date"/>
+                    </div>
+                    <div>
+                        <strong>Finish:</strong>
+                        <t t-out="session.end_date"/>
+                    </div>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="session.attendee_ids" t-as="line">
+                                <tr>
+                                    <td><t t-out="line.name"/></td>
+                                    <td><t t-out="line.phone"/></td>
+                                    <td><t t-out="line.email"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.actions.act_window" id="openacademy_wizard_launch">
+        <field name="name">Launch Attendees registration</field>
+        <field name="res_model">openacademy.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_openacademy_session"/>
+    </record>
+
+    <record model="ir.ui.view" id="openacademy_wizard_view_form">
+        <field name="name">Attendees registration</field>
+        <field name="model">openacademy.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="session_ids"/>
+                    <field name="attendee_ids"/>
+                </group>
+                <footer>
+                    <button string="Add" type="object" class="btn-primary" name="add_attendees"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>
