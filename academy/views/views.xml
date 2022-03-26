@@ -19,6 +19,9 @@
                     <group>
                         <field name="name"/>
                     </group>
+                    <group>
+                        <field name="biography" widget="html"/>
+                    </group>
                 </form>
             </field>
         </record>
