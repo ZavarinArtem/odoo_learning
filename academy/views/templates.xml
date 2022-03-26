@@ -2,7 +2,7 @@
     <template id="index">
         <title>Academy</title>
         <t t-foreach="teachers" t-as="teacher">
-            <p><t t-out="teacher"/></p>
+            <p><t t-out="teacher.id"/>: <t t-out="teacher.name"/></p>
         </t>
     </template>
 
