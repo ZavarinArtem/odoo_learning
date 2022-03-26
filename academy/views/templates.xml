@@ -1,4 +1,11 @@
 <odoo>
+    <template id="index">
+        <title>Academy</title>
+        <t t-foreach="teachers" t-as="teacher">
+            <p><t t-out="teacher"/></p>
+        </t>
+    </template>
+
     <data>
 <!--
         <template id="listing">
