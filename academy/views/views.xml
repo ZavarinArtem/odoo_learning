@@ -18,11 +18,49 @@
                 <form>
                     <group>
                         <field name="name"/>
-                    </group>
-                    <group>
                         <field name="biography" widget="html"/>
+                        <field name="course_ids">
+                            <tree string="Courses" editable="bottom">
+                                <field name="name" />
+                            </tree>
+                        </field>
                     </group>
                 </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="academy.courses_list">
+            <field name="name">Courses list</field>
+            <field name="model">academy.courses</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="teacher_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="academy.courses_form">
+            <field name="name">Courses form</field>
+            <field name="model">academy.courses</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name" />
+                        <field name="teacher_id" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="academy.courses_search">
+            <field name="name">Courses search</field>
+            <field name="model">academy.courses</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="teacher_id" />
+                </search>
             </field>
         </record>
 
@@ -32,12 +70,20 @@
             <field name="res_model">academy.teachers</field>
             <field name="view_mode">tree,form</field>
         </record>
+        <record model="ir.actions.act_window" id="academy.courses_action_window">
+            <field name="name">Courses</field>
+            <field name="res_model">academy.courses</field>
+            <field name="view_mode">tree,form</field>
+        </record>
 
         <!-- Top menu item -->
-        <menuitem name="Academy" id="academy.menu_root"/>
+        <menuitem sequence="0" name="Academy" id="academy.menu_root"/>
 
         <!-- actions -->
         <menuitem name="Teachers" id="academy.teachers" parent="academy.menu_root"
                   action="academy.teachers_action_window"/>
+        <menuitem name="Courses" id="academy.courses" parent="academy.menu_root"
+                  action="academy.courses_action_window"/>
+
     </data>
 </odoo>
