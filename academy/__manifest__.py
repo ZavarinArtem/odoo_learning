@@ -20,13 +20,14 @@
     'version': '15.0.1.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['website', 'mail'],
+    'depends': ['website_sale', 'mail'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'data/data.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

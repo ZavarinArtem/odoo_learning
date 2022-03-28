@@ -31,7 +31,7 @@
 
         <record model="ir.ui.view" id="academy.courses_list">
             <field name="name">Courses list</field>
-            <field name="model">academy.courses</field>
+            <field name="model">product.template</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
@@ -42,7 +42,7 @@
 
         <record model="ir.ui.view" id="academy.courses_form">
             <field name="name">Courses form</field>
-            <field name="model">academy.courses</field>
+            <field name="model">product.template</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
@@ -59,7 +59,7 @@
 
         <record model="ir.ui.view" id="academy.courses_search">
             <field name="name">Courses search</field>
-            <field name="model">academy.courses</field>
+            <field name="model">product.template</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -76,8 +76,9 @@
         </record>
         <record model="ir.actions.act_window" id="academy.courses_action_window">
             <field name="name">Courses</field>
-            <field name="res_model">academy.courses</field>
+            <field name="res_model">product.template</field>
             <field name="view_mode">tree,form</field>
+            <field name="context">{'form_view_id:"academy.courses_form"'}</field>
         </record>
 
         <!-- Top menu item -->
