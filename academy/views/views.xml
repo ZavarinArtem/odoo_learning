@@ -78,7 +78,6 @@
             <field name="name">Courses</field>
             <field name="res_model">product.template</field>
             <field name="view_mode">tree,form</field>
-            <field name="context">{'form_view_id:"academy.courses_form"'}</field>
         </record>
 
         <!-- Top menu item -->
