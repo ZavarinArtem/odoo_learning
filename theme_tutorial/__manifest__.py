@@ -1,6 +1,6 @@
 {
     'name': 'Tutorial theme',
-    'summary': "Test module fof learning purposes",
+    'summary': "Test module for learning purpose",
     'description': 'A description for your theme.',
 
     'author': "S.P.O.C",
@@ -8,10 +8,14 @@
     'license': "LGPL-3",
 
     'category': 'Theme/Creative',
-    'version': '15.0.1.1.0',
+    'version': '15.0.1.1.2',
 
     'depends': ['website', ],
     'data': [
-        'views/assets.xml'
     ],
+    'assets': {
+        'web.assets_frontend': {
+            '/theme_tutorial/static/scss/style.scss',
+        },
+    },
 }
