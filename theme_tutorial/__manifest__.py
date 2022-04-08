@@ -17,5 +17,11 @@
         'web.assets_frontend': {
             '/theme_tutorial/static/scss/style.scss',
         },
+        'web._assets_primary_variables': {
+            '/theme_tutorial/static/scss/primary_variables.scss',
+        },
+        'web._assets_frontend_helpers': {
+            '/theme_tutorial/static/scss/bootstrap_overridden.scss',
+        },
     },
 }

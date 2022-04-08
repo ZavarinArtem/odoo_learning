@@ -1,0 +1,18 @@
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'base-1': (
+            'o-color-1': #000000,
+            'o-color-2': #FFC0CB,
+            'o-color-3': #000000,
+            'o-color-4': #FFC0CB,
+            'o-color-5': #000000,
+        ),
+        'base-2': (
+            'o-color-1': #FFC0CB,
+            'o-color-2': #000000,
+            'o-color-3': #FFC0CB,
+            'o-color-4': #000000,
+            'o-color-5': #FFC0CB,
+        ),
+    )
+);
