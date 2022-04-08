@@ -12,6 +12,7 @@
 
     'depends': ['website', ],
     'data': [
+        'views/layout.xml'
     ],
     'assets': {
         'web.assets_frontend': {
