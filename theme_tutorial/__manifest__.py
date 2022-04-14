@@ -14,6 +14,7 @@
     'data': [
         'views/layout.xml',
         'views/pages.xml',
+        'views/snippets.xml',
     ],
     'assets': {
         'web.assets_frontend': {
