@@ -12,6 +12,7 @@
                 <t t-name="theme_tutorial.services_page_template">
                     <t t-call="website.layout">
                         <div id="wrap">
+                            <div class="oe_structure"/>
                             <div class="container">
                                 <h1>Our Services</h1>
                                 <ul class="services">
