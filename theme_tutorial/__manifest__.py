@@ -27,5 +27,8 @@
         'web._assets_frontend_helpers': {
             '/theme_tutorial/static/scss/bootstrap_overridden.scss',
         },
+        'website.assets_editor': {
+            '/theme_tutorial/static/src/js/tutorial_editor.js'
+        }
     },
 }
